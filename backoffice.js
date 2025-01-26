@@ -21,5 +21,9 @@ form.onsubmit = function (event) {
 
   console.log(newProduct);
 
-  fetch(URL, { method: "POST", body: JSON.stringify(newProduct), headers: { "Conte-Type": "application/json" } });
+  fetch(URL, {
+    method: "POST",
+    body: JSON.stringify(newProduct),
+    headers: { "Content-Type": "application/json" }
+  });
 };
